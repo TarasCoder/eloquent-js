@@ -1,0 +1,11 @@
+// recursive function to check if number is odd or even
+
+const isEaven = (num) => {
+    if (num < 0){
+       num = parseInt(num.toString().replace('-',''));        
+    } 
+    if(num === 0) return true;
+       else if (num === 1) return false;
+          else return isEaven(num - 2)
+}
+console.log(isEaven(50))
