@@ -1,0 +1,15 @@
+const range = (start, end) => {
+    let arr = [];
+    for (let i = start; i < end + 1 ; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+const sum = (arr) => {
+    let sum = 0;
+    for (number of arr){
+        sum += number;
+    }
+    return sum;
+}
+console.log(sum(range(1,10)));
