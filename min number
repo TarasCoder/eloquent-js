@@ -1,0 +1,9 @@
+function a(...n){
+    let min = n[0];
+    n.forEach(el=>{
+        el < min ? min = el : null;
+    })
+    return min;
+}
+
+console.log(a(5,8,1,-8));
