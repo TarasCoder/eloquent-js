@@ -1,0 +1,25 @@
+function range(n1 = 0, n2 = 0, step = 1){
+    let numbers = [];
+    // Checking arguments
+    let min = n1;
+    let max = n2;
+    if(n1 > n2) {
+        min = n2;
+        max = n1;
+    }
+    let stepM = Math.abs(step);
+    for (let i = min; i <= max; i += stepM) {
+        numbers.push(i);        
+    }
+    return numbers;
+}
+function sum(arr){
+    let sum = 0;
+    arr.forEach((el)=>{
+        sum+=el;
+    })
+    return sum;
+}
+
+console.log(sum(range(0, 10, 1)));
+
