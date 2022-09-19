@@ -1,0 +1,12 @@
+function countBs(s, upper){
+    let count = 0;
+    let splitedString = s.split("");
+    splitedString.forEach(el=>{
+        if(el === upper){
+            count++;
+        }
+    })
+    return count;
+}
+
+console.log(countBs("asdBjfiBBuhfC", "f"));
